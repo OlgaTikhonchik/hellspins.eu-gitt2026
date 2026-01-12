@@ -77,7 +77,7 @@ h2::after{
   content: ''; 
   display: block;
   position: absolute; 
-  /* top: 0; */
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -87,7 +87,7 @@ width: 90px;
 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
   border-radius: 0; 
-  height: 2px;
+ mask-composite: exclude;
   
 }
 
@@ -911,9 +911,7 @@ background: linear-gradient(180deg, #F0CE58 0%, #C25630 65%);
 /* .features__table table::after, */
 
 .article  ul li::after,
-/* .features__table::after,     */
-/* .table__wrapper::after, */
-/* .ratings__table::after,  */
+
 .review__wrapper::after,
 .article ol li::after,.faq__subtitle::before,.faq__answer::after{
   content: ''; 
