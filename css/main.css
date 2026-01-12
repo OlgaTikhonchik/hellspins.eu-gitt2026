@@ -927,10 +927,14 @@ background: linear-gradient(90deg, #F12711 0%, #F5AF19 100%) ;
 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
   border-radius: 15px; 
+  mask-composite: exclude;
 }
 .article  ul li::after,.article ol li::after{
   border-radius: 12px;
 }
+
+
+
 
 .features__tableBonus tr{
   display: table;
@@ -949,22 +953,6 @@ mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   position: relative;
 }
 
-/*  */
-
-.article ul li::after,
-.article ol li::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 0px;
-  border-radius: 15px;
-  background:
-   
-    linear-gradient(90deg, #F12711 0%, #F5AF19 100%) border-box;
-  border: 4px solid transparent;
-  pointer-events: none;
-}
-/*  */
 
 
 .table-border {
@@ -1505,6 +1493,9 @@ border-radius: 12px;
 .article  ul li + li{
   margin-top: 20px;
 }
+
+
+
 
 .article  ul li::before
 
